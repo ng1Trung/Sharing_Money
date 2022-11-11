@@ -1,0 +1,53 @@
+@import "~antd/dist/antd.min.css";
+
+:root {
+  --primary: #5a5a5a;
+  --text: rgba(0, 0, 0, 0.87);
+  --label: rgba(0, 0, 0, 0.54);
+
+  --border: rgba(0, 0, 0, 0.12);
+  --hover: rgba(0, 0, 0, 0.4);
+  --placeholder: rgba(0, 0, 0, 0.2);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  line-height: 2.3;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+
+//placeholder color
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--placeholder);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--placeholder);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--placeholder);
+}
