@@ -1,5 +1,5 @@
-import Login from "../components/pages/Login/Login"
-import Transaction from "../components/pages/Transaction/Transaction"
+import Login from "../pages/Login/Login"
+import Transaction from "../pages/Transaction/Transaction"
 
 const publicRoutes = [{ path: "/login", component: Login }]
 

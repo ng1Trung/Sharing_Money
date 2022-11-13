@@ -35,6 +35,13 @@ input::-ms-clear {
   display: none;
 }
 
+button,
+input,
+[tabindex] {
+  outline: none;
+  border: none;
+}
+
 //placeholder color
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
