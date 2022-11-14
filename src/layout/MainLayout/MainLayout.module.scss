@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.content {
+  margin-top: var(--global-height);
+}

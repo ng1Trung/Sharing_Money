@@ -4,3 +4,12 @@
   justify-content: flex-start;
   margin-bottom: 16px;
 }
+
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: var(--global-height);
+  width: 100%;
+  padding: 14px 0;
+}

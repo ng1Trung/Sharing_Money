@@ -1,0 +1,25 @@
+.wrapper {
+  --button-wrapper-height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--button-wrapper-height);
+  padding: 0 30px;
+  font-weight: 500;
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.26);
+  background-color: var(--dark-silver);
+}
+
+//type
+.primary {
+  background-color: var(--primary);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.dark {
+  color: rgba(0, 0, 0, 0.26);
+  background-color: var(--dark-silver);
+}

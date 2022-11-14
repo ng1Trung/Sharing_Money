@@ -7,7 +7,7 @@ import {
 import { publicRoutes, privateRoutes } from "./routes/routes"
 
 function App() {
-  const user = false
+  const user = true
 
   return (
     <Router>
@@ -20,19 +20,30 @@ function App() {
               <Route
                 key={index}
                 path={route.path}
-                element={user ? <Navigate to="/" replace /> : <Page />}
+                element={
+                  user ? <Navigate to="/transaction" replace /> : <Page />
+                }
               />
             )
           })}
 
           {privateRoutes.map((route, index) => {
             const Page = route.component
+            const Layout = route.layout
 
             return (
               <Route
                 key={index}
                 path={route.path}
-                element={user ? <Page /> : <Navigate to="/login" replace />}
+                element={
+                  user ? (
+                    <Layout>
+                      <Page />
+                    </Layout>
+                  ) : (
+                    <Navigate to="/login" replace />
+                  )
+                }
               />
             )
           })}

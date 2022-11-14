@@ -1,13 +1,16 @@
 @import "~antd/dist/antd.min.css";
 
 :root {
-  --primary: #5a5a5a;
+  --primary: #2db84c;
+  --white: #fff;
   --text: rgba(0, 0, 0, 0.87);
   --label: rgba(0, 0, 0, 0.54);
-
-  --border: rgba(0, 0, 0, 0.12);
+  --dark-silver: rgba(0, 0, 0, 0.12);
   --hover: rgba(0, 0, 0, 0.4);
   --placeholder: rgba(0, 0, 0, 0.2);
+
+  --global-height: 64px;
+  --sidebar-width: 100px;
 }
 
 * {
@@ -25,9 +28,9 @@ body {
   line-height: 2.3;
 }
 
-a {
+a[href] {
   text-decoration: none;
-  cursor: pointer;
+  color: var(--white);
 }
 
 input::-ms-reveal,
@@ -57,4 +60,21 @@ input,
 ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: var(--placeholder);
+}
+
+//modal antd
+.ant-modal-content {
+  border-radius: 4px;
+}
+
+.ant-modal-header {
+  padding: 20px 24px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom: 1px solid var(--dark-silver);
+}
+
+.ant-modal-title {
+  font-size: 2rem;
+  line-height: 2.4rem;
 }
